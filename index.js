@@ -65,9 +65,10 @@ function displayProducts(products) {
         <img src="${product.thumbnail}" alt="${product.title}"  />
         <h3>${product.title}</h3>
         <p class="shipping" >${product.shippingInformation}</p>
-        <p>Price: $${product.price}</p>
+        <p class="pricing">Price: $${product.price}</p>
         <p>${product.description.slice(0, 60)}...</p> 
         <p class="brand" >Brand: ${product.brand}</p>
+        
 `
 
         list.appendChild(li);
